@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,109 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiplyNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 * 13 = ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="feD-9f-lSB">
+                                <rect key="frame" x="22" y="422" width="370" height="62"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4N-wJ-dQ3">
+                                <rect key="frame" x="207" y="815" width="207" height="81"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="6ma-cy-PQ7"/>
+                                    <constraint firstAttribute="width" constant="207" id="pnu-wh-t2p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="22">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ftk-Xk-QTu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpS-Df-kje">
+                                <rect key="frame" x="0.0" y="815" width="207" height="81"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="1JK-Of-WXx"/>
+                                    <constraint firstAttribute="height" constant="81" id="k7C-AX-IIn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="32"/>
+                                <state key="normal" title="13">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIH-Bt-WPl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1O-Hb-djr">
+                                <rect key="frame" x="207" y="734" width="207" height="81"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="09d-7f-Vjp"/>
+                                    <constraint firstAttribute="width" constant="207" id="GH3-8k-qFK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="15">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3U-Ek-6D8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npI-t3-H2u">
+                                <rect key="frame" x="0.0" y="734" width="207" height="81"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="7Jk-np-gTj"/>
+                                    <constraint firstAttribute="width" constant="207" id="lPM-DK-Ugy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="32"/>
+                                <state key="normal" title="13">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mMt-Y9-HS3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feD-9f-lSB" secondAttribute="trailing" constant="22" id="7op-2h-CyX"/>
+                            <constraint firstItem="feD-9f-lSB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="B0n-1p-kHB"/>
+                            <constraint firstItem="a1O-Hb-djr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dko-qi-RgH"/>
+                            <constraint firstAttribute="bottom" secondItem="t4N-wJ-dQ3" secondAttribute="bottom" id="FyS-Le-sxx"/>
+                            <constraint firstItem="a1O-Hb-djr" firstAttribute="leading" secondItem="npI-t3-H2u" secondAttribute="trailing" id="KAq-es-j0k"/>
+                            <constraint firstItem="npI-t3-H2u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TuM-sR-5bI"/>
+                            <constraint firstItem="gpS-Df-kje" firstAttribute="top" secondItem="npI-t3-H2u" secondAttribute="bottom" id="Wzd-oq-rtM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t4N-wJ-dQ3" secondAttribute="trailing" id="Zk4-aV-pBm"/>
+                            <constraint firstItem="t4N-wJ-dQ3" firstAttribute="leading" secondItem="gpS-Df-kje" secondAttribute="trailing" id="bvs-WS-MqC"/>
+                            <constraint firstItem="feD-9f-lSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="ceD-AP-isr"/>
+                            <constraint firstAttribute="bottom" secondItem="gpS-Df-kje" secondAttribute="bottom" id="nPK-7z-4px"/>
+                            <constraint firstItem="gpS-Df-kje" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nuB-hV-huK"/>
+                            <constraint firstItem="t4N-wJ-dQ3" firstAttribute="top" secondItem="a1O-Hb-djr" secondAttribute="bottom" id="rHk-zY-OjA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Button01" destination="npI-t3-H2u" id="3rc-Aa-9ZP"/>
+                        <outlet property="Button02" destination="a1O-Hb-djr" id="vp5-Gh-y28"/>
+                        <outlet property="Button03" destination="gpS-Df-kje" id="wkD-Fx-7EU"/>
+                        <outlet property="Button04" destination="t4N-wJ-dQ3" id="wv0-fI-sfb"/>
+                        <outlet property="MainLabel" destination="feD-9f-lSB" id="FS2-rg-xL0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
